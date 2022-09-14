@@ -1,2 +1,2 @@
 # EigenFittingDll
-RealTime Fitting Dll (Windows / Linux 호환)
+RealTime Fitting Dll (Windows & Linux ver)
