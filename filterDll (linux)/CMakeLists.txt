@@ -10,17 +10,10 @@ include_directories(
     ${EIGEN3_INCLUDE_DIR}
 )
 
-## .so 颇老 积己
 add_library (filterDll SHARED
     FilterDll.cpp
     FilterLowPass.cpp
 )
-
-## .a 颇老 积己
-#add_library (filterDll
-#    FilterDll.cpp
-#    FilterLowPass.cpp
-#)
 
 target_link_libraries (filterDll Eigen3::Eigen)
 
