@@ -1,4 +1,4 @@
-#include "stdio.h"
+﻿#include "stdio.h"
 #include "FilterLowPass.h"
 #include "LogHelper.h"
 #include <Eigen/QR>
@@ -107,7 +107,7 @@ void CMyFilter::InitFitting()
 	fp_log1 = fopen("functionlog.txt", "a+");//디버깅 용도
 	if (fp_log1 != nullptr)
 	{
-		fprintf(fp_log1, "\n%2d-%2d-%2d-%2d-%2d: InitFitting()", its_time->tm_mon, its_time->tm_mday + 1, its_time->tm_hour, its_time->tm_min, its_time->tm_sec);
+		fprintf(fp_log1, "\n%2d-%2d-%2d-%2d-%2d: InitFitting()", its_time->tm_mon + 1, its_time->tm_mday, its_time->tm_hour, its_time->tm_min, its_time->tm_sec);
 		fclose(fp_log1);
 		fp_log1 = nullptr;
 	}
